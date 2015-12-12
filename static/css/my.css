@@ -4,3 +4,28 @@
 .hov:hover {
   background-color: #FA6E6E;
 }
+@font-face {
+  font-family: Andantino;
+  src: url('../fonts/Andantino_script.ttf')
+}
+@font-face {
+  font-family: AcademyItalic;
+  src: url('../fonts/AcademyCTT_Italic.ttf');
+}
+@font-face {
+  font-family: Helveticas;
+  src: url('../fonts/Helvetica_Neue_OTS.ttf');
+}
+@font-face {
+  font-family: Academy;
+  src: url('../fonts/Academy.ttf');
+}
+.logofont {
+  font-family: Andantino;
+  font-size: 5em;
+}
+.intro {
+  font-family: AcademyItalic;
+  font-size: 3em;
+  font-style: italic;
+}
