@@ -1,11 +1,6 @@
 .fontsize-18 {
   font-size: 18px;
-};
-@font-face {
-  font-family: Andantino;
-  src: url(../fonts/Andantino_script.ttf);
-};
-
-.fontty {
-  font-size: 46px;
-};
+}
+.hov:hover {
+  background-color: #FA6E6E;
+}
