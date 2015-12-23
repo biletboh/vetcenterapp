@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>Ветеринарна аптека</title>
+
     <link href="{{url_for('static', filename='css/bootstrap.css')}}" type="text/css" rel="stylesheet">
     <link href="{{url_for('static', filename='css/agency.css')}}" rel="stylesheet">
     <link href="{{url_for('static', filename='css/stylish-portfolio.css')}}" rel="stylesheet">
@@ -23,6 +24,7 @@
     <link href="{{url_for('static', filename='fonts/Andantino_script.ttf')}}" type='application/octet-stream'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura:400,600,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,8 +49,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                  Зоовет Центр
-                  <!--<img class="img-responsive" src="{{url_for('static', filename='img/portfolio/logo.png')}}" alt="clinics"> -->
+                  <img class="img-responsive logo-img logo-p" src="{{url_for('static', filename='img/portfolio/logo.png')}}" alt="clinics"> Зоовет Центр
                 </a>
 
             </div>
@@ -82,8 +83,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro">Вітаємо у ветеринарному центрі</div>
-                <div class="intro-heading">Зоовет</div>
+                <div class="intro">Вітаємо у ветеринарній клініці</div>
+                <div class="intro-heading">Зоовет Центр</div>
                 <a href="#services" class="page-scroll btn btn-xl">Дізнатися більше</a>
             </div>
         </div>
@@ -99,17 +100,17 @@
                   </div>
                 </div>
                 <div class="row text-center">
-                  <div class="col-md-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                  <div class="col-md-4">
+                    <a class="" data-toggle="modal" href="#portfolioModal1">
                       <span class="fa-stack fa-4x hov">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
                       </span>
                     </a>
-                      <h4 class="service-heading">Ветеринарна клініка</h4>
+                    <h4 class="service-heading">Ветеринарна клініка</h4>
                       <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 service-cont">
                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                           <span class="fa-stack fa-4x hov">
                             <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -170,7 +171,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                              <img class="img-circle img-responsive" src="{{url_for('static', filename='img/about/response-1.jpg')}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -181,10 +182,10 @@
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="timeline-inverted">
+                            </li>
+                            <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                              <img class="img-circle img-responsive" src="{{url_for('static', filename='img/about/response-2.jpg')}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -195,10 +196,11 @@
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
-                        </li>
-                        <li>
+                            </li>
+                            <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                              <img class="img-circle img-responsive" src="{{url_for('static', filename='img/about/response-3.jpg')}}" alt="">
+
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -211,10 +213,10 @@
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
+                        <div class="timeline-image">
+                          <img class="img-circle img-responsive" src="{{url_for('static', filename='img/about/response-4.jpg')}}" alt="">
+                        </div>
+                        <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Серьожа</h4>
                                     <h4 class="subheading">Купили хом'ячка</h4>
@@ -246,16 +248,30 @@
 
     <!-- Contact Section -->
 
-    <footer id="contact">
+    <section id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row margins">
           <div class="col-lg-10 col-lg-offset-1 text-center">
             <h3><strong>Зоовет Центр</strong>
             </h3>
+          </div>
+        </div>
+        <div class="row margins">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
             <p>
             <a class="btn btn-pr" href="{{url_for('static', filename='downloads/price.pdf')}}" download>Завантажити прайслист</a></p> 
-
+          </div>
+        </div>
+        <div class="row margins">
+          <div class="col-lg-4 text-center">
             <p class="fontsize-18">м. Буча<br>вул. Пушкінська, 7ж<br>ЖК "Rich Town"</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <br>
+            <p class="fontsize-18">Цілодобово<br>Без вихідних</p>
+          </div>
+
+          <div class="col-lg-4 text-center">
             <ul class="list-unstyled fontsize-18">
               <li><i class="fa fa-phone fa-fw"></i>(067) 325-97-15</li>
               <li><i class="fa fa-phone fa-fw"></i>(044) 223-21-64</li>
@@ -263,12 +279,13 @@
               <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
               </li>
             </ul>
-            <p class="fontsize-18">Цілодобово<br>Без вихідних</p>
-                        <hr class="small">
-            <p class="text-muted">Розроблено #bb 2015</p>
           </div>
+          <hr class="small">
         </div>
       </div>
+    </section>
+    <footer>
+            <p class="text-muted">Розроблено #bb 2015</p>
     </footer>
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
