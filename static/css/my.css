@@ -1,8 +1,27 @@
 .fontsize-18 {
   font-size: 18px;
 }
+.service-cont {
+  position: relative;
+  }
+.service-hov:hover{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  padding-right: 15px;
+  padding-left: 15px;
+  background: #FA6E6E;
+  opacity: 0.5;
+
+}
+.service-hov {
+  z-idex: 10;
+}
 .hov:hover {
-  background-color: #FA6E6E;
+  position: relative;
+  background-color: #58C858;
 }
 @font-face {
   font-family: Andantino;
@@ -21,7 +40,7 @@
   src: url('../fonts/Academy.ttf');
 }
 .logofont {
-  font-family: Andantino;
+  font-family: 'Jura', sans-serif;
   font-size: 5em;
 }
 .intro {
@@ -31,12 +50,25 @@
 }
 .btn-pr {
   color: #FFF;
-  background-color: #C21D1D;
-  border-color: #C21D1D;
+  background-color: #179B17;
+  border-color: #179B17;
   font-family: Helveticas,"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 3px;
   font-size: 16px;
   padding: 10px 20px;
+}
+.btn-pr:hover {
+  color:#FFF;
+  background-color: #077F07;
+  border-color: #33B133;
+}
+.logo-img {
+  width: 35px;
+  vertical-align: middle;
+}
+.margins {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

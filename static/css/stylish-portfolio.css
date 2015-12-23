@@ -232,5 +232,6 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 10px 0;
+    background-color: #005E00;
 }
