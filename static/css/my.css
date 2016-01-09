@@ -22,6 +22,7 @@
 .hov:hover {
   position: relative;
   background-color: #58C858;
+  border-radius: 50px;
 }
 @font-face {
   font-family: Andantino;
@@ -70,4 +71,12 @@
 .margins {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.resp-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.text-footer {
+  color: #fff;
 }
