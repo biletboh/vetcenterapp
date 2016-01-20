@@ -51,21 +51,24 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Послуги</a>
-                    </li>
-                    <li>
-                    <a class="page-scroll" href="#about">Відгуки</a>
-                    </li>
-                    <li>
-                    <a class="page-scroll" href="#contact">Контакти</a>
-                    </li>
-                    <li>
-                    <a class="page-scroll" href="#team">Мапа</a>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                <a href="#page-top"></a>
+                </li>
+                <li> 
+                <a class="page-scroll" href="#about">Про нас</a>
+                </li>
+                <li>
+                <a class="page-scroll" href="#services">Послуги</a>
+                </li>
+                <li>
+                <a class="page-scroll" href="#responses">Відгуки</a>
+                </li>
+                <li>
+                <a class="page-scroll" href="#contact">Контакти</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#map">Мапа</a>
                     </li>
 
                 </ul>
@@ -85,9 +88,20 @@
             </div>
         </div>
     </header>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+          <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -137,7 +151,7 @@
                     </span>
                   </a>
                     <h4 class="service-heading">Ветеринарна аптека</h4>
-                    <p class="text-muted">У аптеці Зоовет Центру ви зможете знайти сучасні та ефективні лікі для тварин за доступними цінами.</p>
+                    <p class="text-muted">У аптеці Зоовет Центру ви знайдете сучасні та ефективні лікі для тварин за доступними цінами.</p>
                 </div>
                 <div class="col-md-4">
  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">  
@@ -154,7 +168,7 @@
 
         </section>
         <!-- About Section -->
-        <section id="about">
+        <section id="responses">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
@@ -175,8 +189,8 @@
                   <img class="img-responsive" src="{{url_for('static', filename='img/about/img-1.jpg')}}" alt="img-1">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1 class="text-left">Іван</h1>
-                      <p class="text-left">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h1 class="text-left carousel-name">Іван</h1>
+                      <p class="text-left carousel-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     </div>
                   </div> 
                 </div>
@@ -184,8 +198,8 @@
                   <img class="img-responsive" src="{{url_for('static', filename='img/about/img-2.jpg')}}" alt="img-2">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1 class="text-left">Сергій</h1>
-                      <p class="text-left">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h1 class="text-left carousel-name">Сергій</h1>
+                      <p class="text-left carousel-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     </div>
                   </div> 
                 </div>
@@ -193,8 +207,8 @@
                   <img class="img-responsive" src="{{url_for('static', filename='img/about/img-3.jpg')}}" alt="img-3">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1 class="text-left">Олександр</h1>
-                      <p class="text-left">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h1 class="text-left carousel-name">Олександр</h1>
+                      <p class="text-left carousel-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     </div>
                   </div> 
                 </div>
@@ -325,7 +339,7 @@
       </div>
     </section>
     <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <section id="map" class="bg-light-gray">
       <div class="container map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.4938939333122!2d30.254925975997843!3d50.55299709902767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b31f0a6de215b%3A0xe5ceb0a5ebca307c!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgNSwg0JHRg9GH0LAsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1448606677742" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
@@ -352,16 +366,11 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Ветеринарна клініка</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-responsive img-centered" src="{{url_for('static', filename='img/portfolio/clinics.jpg')}}" alt="clinics">
-                            <p>Ваш домашній улюбленець захворів? Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>Ваш домашній улюбленець захворів? Ветеринар Зоовет Центру обстежить, поставить діагноз та зробить усе можливе, щоб вилікувати вашого звіра. Зокрема, зоохірург має великий досвід проведення операцій різних ступенів скадності. У клініці можна зробити щеплення собакам, котам та кролям сучасною вакциною європейських виробників. Також у центрі наявне обладнання для ультра-звукового обстеження. Здорові звірі приносять радість та задоволення хазяїну, не зволікайте з їх лікуванням! </p>
                             <p>
                             Завантажити 
                             <a href="{{url_for('static', filename='downloads/price.pdf')}}" download>прайслист</a>.</p> <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрити</button>
                         </div>
                     </div>
