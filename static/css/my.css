@@ -67,8 +67,16 @@
 .mar {
   margin-bottom: 5px;
 }
-.carousel-name {
-  font-size: 4vw;
+/*.carousel-name {
+  font-size: 36px;
 }
 .carousel-text {
+  font-size: 14px;
 } 
+@media (max-device-width: 720px) {
+  .carousel-name{font-size: 24px;}
+}
+@media (max-width: 320px) {
+  .carousel-name{font-size: 18px;}
+}*/
+
