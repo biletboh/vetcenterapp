@@ -67,6 +67,9 @@
 .mar {
   margin-bottom: 5px;
 }
+#about {
+  padding-bottom: 165px;
+}
 /* Responsive design */
 @media screen and (max-width:768px) {
   .intro {
