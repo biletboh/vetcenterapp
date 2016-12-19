@@ -76,3 +76,8 @@
     font-size: 28pt !important;
   }
 }
+@media screen and (min-width:1200px) {
+  .intro-text {
+    padding-top: 350px !important;
+  }
+}
