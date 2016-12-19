@@ -67,12 +67,37 @@
 .mar {
   margin-bottom: 5px;
 }
+#about {
+  padding-bottom: 165px;
+}
 /* Responsive design */
 @media screen and (max-width:768px) {
+  p {
+    font-size: 12pt;
+    line-height: 1.2;
+  }
+  li {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  section {
+    padding: 50px 0;
+  }
   .intro {
     font-size: 24pt;
   }
   .intro-heading {
     font-size: 28pt !important;
+  }
+  .navbar-brand {
+    font-size: 16pt;
+  }
+  .map {
+    height: 400px !important;
+  }
+}
+@media screen and (min-width:1200px) {
+  .intro-text {
+    padding-top: 350px !important;
   }
 }
